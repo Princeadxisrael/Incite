@@ -1,3 +1,4 @@
+//inserting the data of the table in a class
 class Elements {
   static GetHeading() {
     return ["UserName", "Score"];
