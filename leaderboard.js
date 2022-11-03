@@ -1,3 +1,4 @@
+//The onload function displays the table and improve web cookies
 window.onload = function () {
   createTable();
 };
@@ -16,6 +17,7 @@ function createTable() {
     " Loggers Ranking. Thank you for using Toolhub, and come 🔙 anytime!";
 
   //insert a row; add headings
+  //document.createElement('table).insertRow().insertCell(-1).outerHTML
   const horizontalRow = table.insertRow();
   for (let title of heading) {
     horizontalRow.insertCell(-1).outerHTML = `<th>${title}</th>`;
@@ -24,7 +26,7 @@ function createTable() {
   //iterating through data; adding rows and cells for each element
   for (let element of elements) {
     //defining a variable for the table cells
-    const eachCell = table.insertRow(-1);
+    const eachCell = table.insertRow();
     for (let property of properties) {
       eachCell.insertCell(-1).innerHTML = element[property];
     }

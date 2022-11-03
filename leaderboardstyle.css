@@ -8,7 +8,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(7, 116, 52);
+  background-color: rgb(40, 93, 206);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -29,33 +29,6 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
-/* table {
-  table-layout: fixed;
-  /* width: 100%; */
-/* border-collapse: collapse;
-  border: none;
-  margin-top: 50px;
-} */
-
-/* th {
-  text-align: center;
-  width: 50%;
-  color: #111;
-}
-
-td {
-  text-align: center;
-  width: 50%;
-  padding: 3px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #111;
-}
-
-#tableinsert {
-  background-color: aliceblue;
-  position: absolute;
-} */
 
 table {
   table-layout: auto;
