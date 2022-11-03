@@ -1,6 +1,6 @@
 class Elements {
   static GetHeading() {
-    return ["Name", "Score"];
+    return ["UserName", "Score"];
   }
   static GetProperties() {
     return ["userName", "score"];
