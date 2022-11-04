@@ -10,22 +10,69 @@
   <body>
     <nav class="navigationbar">
       <ul>
-        <img id="logo" src="./Toolhub-logo.png" />
+        <img src="./Toolhub-logo.png" />
         <li>
           <a href="index.html">Home</a>
         </li>
 
         <li>
-          <a href="leaderboard.html">leaderboard</a>
+          <a href="leaderboard.html">Leaderboard</a>
         </li>
       </ul>
     </nav>
     <main>
       <!-- create a grid-container and div for each element in the container -->
       <div class="grid-container">
-        <header class="header"></header>
-        <aside class="sidebar"></aside>
-        <main class="main"></main>
+        <header class="header">
+          <div class="header-search">Search</div>
+          <div class="header-avatar">Avatar</div>
+        </header>
+        <aside class="sidebar">
+          <ul class="sidebar-list">
+            <img id="logo" src="./Toolhub-logo.png" />
+            <li class="sidebar-list-item">overview</li>
+            <li class="sidebar-list-item">Activities</li>
+            <li class="sidebar-list-item">Trends</li>
+            <li class="sidebar-list-item">Toolhub Docs</li>
+            <li class="sidebar-list-item">Community</li>
+            <li class="sidebar-list-item">Profile</li>
+            <li class="sidebar-list-item">About Toolhub Wikimedia</li>
+            <hr />
+            <li class="sidebar-list-item">Privacy Policy</li>
+            <li class="sidebar-list-item">Terms of use</li>
+            <li class="sidebar-list-item">Issues</li>
+            <li class="sidebar-list-item">Developer Access</li>
+          </ul>
+        </aside>
+        <main class="main">
+          <div class="main-header">
+            <div class="main-header-heading">Welcome User</div>
+          </div>
+          <div class="main-overview">
+            <div class="overview">
+              <div class="card-overview">Citation Added in the past month</div>
+              <div class="card-overview-info">35</div>
+            </div>
+            <div class="overview">
+              <div class="card-overview">Citation Added in the past year</div>
+              <div class="card-overview-info">1021</div>
+            </div>
+            <div class="overview">
+              <div class="card-overview">
+                Avg. citation Added in the past year
+              </div>
+              <div class="card-overview-info">85</div>
+            </div>
+            <div class="overview">
+              <div class="card-overview">Avg. Monthly Community engagement</div>
+              <div class="card-overview-info">50+</div>
+            </div>
+            <div class="overview">
+              <div class="card-overview">Avg. Annual Community engagement</div>
+              <div class="card-overview-info">600+</div>
+            </div>
+          </div>
+        </main>
         <footer class="footer"></footer>
       </div>
     </main>
