@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin-top: 0px;
   padding: 0px;
@@ -7,14 +11,9 @@ body {
 button {
   padding: 5px;
   width: 150px;
-
   float: center;
   margin-left: 350px;
 }
-
-/* .homepagedesign {
-  background-color: rgb(81, 236, 10);
-} */
 
 .firstheading {
   margin-top: 0px;
@@ -22,21 +21,6 @@ button {
   font-size: 70px;
   color: rgb(21, 143, 5);
 }
-
-/* .leaderboard {
-  border: none;
-  padding: 0.5rem 2rem;
-  /* font-size: 1.6rem; */
-/* 
-  font-family: inherit;
-  text-align: left;
-  width: 12rem;
-  border-radius: 10rem;
-  margin-left: 60rem;
-  color: inherit;
-  border: 1px solid #fff;
-  transition: all 0.3s;
-} */
 
 input {
   height: 30px;
@@ -73,10 +57,6 @@ button a:hover {
   color: rgb(40, 93, 206);
 }
 
-/* button :hover {
-  color: hotpink;
-} */
-
 .endingComment {
   align-items: center;
   justify-content: center;
@@ -84,9 +64,6 @@ button a:hover {
   margin-top: 50px;
 }
 
-/* .navigationbar {
-  position: relative;
-} */
 nav ul {
   list-style-type: none;
   margin: 0;

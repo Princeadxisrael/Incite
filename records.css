@@ -40,3 +40,37 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+
+/* give grid parameters to parent grid-container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main"
+    "sidebar footer";
+  height: 100vh;
+}
+/* give chiled elemennt grid names */
+
+.header {
+  grid-area: header;
+  background-color: #648ca6;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0, 16px;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: #1b3141;
+}
+.main {
+  grid-area: main;
+  background-color: inherit;
+}
+.footer {
+  grid-area: footer;
+  background-color: #021855;
+}
