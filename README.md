@@ -26,6 +26,7 @@ The key solutions for this web application were (but not limited to) :
 A more stylish footer should add a liitle bit of vibrance to the page
 Dynamic dashboard with sidebar for the record dashboard page
 An admin area would also be a useful development for managing users activity
+Adding No-color icons to the dashboard would make the dashboard have a more gamified look
 
 ### System Minimum Requirements
 
