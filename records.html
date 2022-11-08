@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="records.css" />
+    <!-- importing the fontawesome library for easy font manipulation -->
+    <script
+      src="https://kit.fontawesome.com/8d5c79f2c6.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Dashboard</title>
   </head>
   <body>
@@ -23,25 +28,32 @@
     <main>
       <!-- create a grid-container and div for each element in the container -->
       <div class="grid-container">
+        <!-- create an header and adding a menu-icon -->
         <header class="header">
+          <div class="menu-icon">
+            <i class="fa-duotone fa-circle-ellipsis"></i>
+          </div>
           <div class="header-search">Search</div>
           <div class="header-avatar">Avatar</div>
         </header>
         <aside class="sidebar">
+          <div class="sidebar_close-icon">
+            <i class="fa-duotone fa-circle-xmark"></i>
+          </div>
           <ul class="sidebar-list">
             <img id="logo" src="./Toolhub-logo.png" />
-            <li class="sidebar-list-item">overview</li>
-            <li class="sidebar-list-item">Activities</li>
-            <li class="sidebar-list-item">Trends</li>
-            <li class="sidebar-list-item">Toolhub Docs</li>
-            <li class="sidebar-list-item">Community</li>
-            <li class="sidebar-list-item">Profile</li>
-            <li class="sidebar-list-item">About Toolhub Wikimedia</li>
+            <li class="sidebar_list-item">overview</li>
+            <li class="sidebar_list-item">Activities</li>
+            <li class="sidebar_list-item">Trends</li>
+            <li class="sidebar_list-item">Toolhub Docs</li>
+            <li class="sidebar_list-item">Community</li>
+            <li class="sidebar_list-item">Profile</li>
+            <li class="sidebar_list-item">About Toolhub Wikimedia</li>
             <hr />
-            <li class="sidebar-list-item">Privacy Policy</li>
-            <li class="sidebar-list-item">Terms of use</li>
-            <li class="sidebar-list-item">Issues</li>
-            <li class="sidebar-list-item">Developer Access</li>
+            <li class="sidebar_list-item">Privacy Policy</li>
+            <li class="sidebar_list-item">Terms of use</li>
+            <li class="sidebar_list-item">Issues</li>
+            <li class="sidebar_list-item">Developer Access</li>
           </ul>
         </aside>
         <main class="main">

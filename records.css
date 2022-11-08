@@ -41,7 +41,7 @@ li a {
   text-decoration: none;
 }
 
-/* first give grid parameters to parent grid-container and make mobile responsive */
+/* first give grid parameters to parent grid-container, use graduating media queries make mobile responsive */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr; /*no sidebar in mobile*/
@@ -56,15 +56,56 @@ li a {
 .sidebar {
   grid-area: sidebar;
   background-color: #1b3141;
-  display: none;
+  display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  overflow-y: auto;
+  z-index: 2;
   align-items: center;
+  transform: translate(-245px);
+  transition: all 0.6s ease-in-out;
+}
+
+/* the active class will be toggled on menu and close icon clicks */
+.sidebar.active {
+  transform: translate(0);
+}
+
+.sidebar_close-icon {
+  position: absolute;
+  visibility: visible;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ddd;
 }
 
 .overview {
   column-count: 1;
   column-gap: 20px;
   margin: 20px;
+}
+
+/* menu icon stays fixed for mobile devices */
+.menu-icon {
+  position: fixed;
+  display: flex;
+  top: 5px;
+  left: 10px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #000000;
+}
+
+.header-search {
+  margin-left: 42px;
 }
 
 /*Non-mobile style, with 750px breakpoint*/
@@ -88,6 +129,15 @@ li a {
     align-items: center;
     position: relative;
     overflow-y: auto;
+    transform: translateX(0);
+  }
+  .menu-icon {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebar_close-icon {
+    visibility: hidden;
   }
 }
 
@@ -113,12 +163,12 @@ li a {
   list-style-type: none;
 }
 
-.sidebar-list-item {
+.sidebar_list-item {
   padding: 20px 40px;
   color: #ddd;
 }
 
-.sidebar-list-item:hover {
+.sidebar_list-item:hover {
   background-color: #111;
   cursor: pointer;
   transition: background-color 0.5s;

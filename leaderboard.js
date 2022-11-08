@@ -23,7 +23,7 @@ function createTable() {
     horizontalRow.insertCell(-1).outerHTML = `<th>${title}</th>`;
   }
 
-  //iterating through data; adding rows and cells for each element
+  //iterating through data; adding rows and cells for each element and sorting the elements in a descending order
   const sortedElements = elements.sort((a, b) => b.score - a.score);
   for (let element of sortedElements) {
     //defining a variable for the table cells
