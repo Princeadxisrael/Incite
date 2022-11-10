@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   margin-top: 0px;
@@ -42,7 +43,7 @@ li a {
   text-decoration: none;
 }
 
-/* first give grid parameters to parent grid-container, use graduating media queries make mobile responsive */
+/* first give grid parameters to parent grid-container*/
 .grid-container {
   display: grid;
   grid-template-columns: 1fr; /*no sidebar in mobile*/
@@ -54,7 +55,7 @@ li a {
   height: 100vh;
 }
 
-/* menu icon stays fixed for mobile devices */
+/* use graduating media queries make mobile responsive and menu icon stays fixed for mobile devices */
 .menu-icon {
   position: fixed;
   display: flex;
@@ -66,7 +67,7 @@ li a {
   border-radius: 10%;
   cursor: pointer;
   padding: 10px;
-  background-color: #1d07e0;
+  background-color: #594bda5d;
 }
 
 /* give child elemennt grid names */
@@ -138,7 +139,7 @@ li a {
   justify-content: center;
   margin: 20px;
   padding: 20px;
-  height: 50px;
+  height: 60px;
   background-color: #666a75;
   color: white;
 }
@@ -164,7 +165,7 @@ li a {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #d3d3;
+  background-color: rgba(51, 221, 94, 0.2);
 }
 .card-overview {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
