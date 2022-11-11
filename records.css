@@ -72,13 +72,13 @@ h3 {
   display: flex;
   top: 3px;
   left: 7px;
-  bottom: 10px;
+  bottom: 3px;
   align-items: center;
   justify-content: center;
   z-index: 1;
-  border-radius: 40%;
+  border-radius: 30%;
   cursor: pointer;
-  padding: 5px;
+  padding: 10px;
   background-color: rgba(154, 230, 154, 0.867);
 }
 
