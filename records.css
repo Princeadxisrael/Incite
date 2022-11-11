@@ -70,12 +70,12 @@ h3 {
 .menu-icon {
   position: fixed;
   display: flex;
-  top: 5px;
+  top: 3px;
   left: 10px;
   align-items: center;
   justify-content: center;
   z-index: 1;
-  border-radius: 10%;
+  border-radius: 30%;
   cursor: pointer;
   padding: 10px;
   background-color: #5a5d;
@@ -232,5 +232,16 @@ h3 {
   }
   .menu-icon {
     visibility: hidden;
+  }
+  .overview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(51, 221, 94, 0.2);
+    box-shadow: 0px 1px;
+  }
+  .card-overview {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 }
