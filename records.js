@@ -14,9 +14,9 @@ const switchClassName = function (el, className) {
 };
 
 menuIconEL.addEventListener("click", function () {
-  switchClassName(sideBarEL, "sidebar-active");
+  switchClassName(sideBarEL, "active");
 });
 
 sideBarCLoseEl.addEventListener("click", function () {
-  switchClassName(sideBarEL, "sidebar-active");
+  switchClassName(sideBarEL, "active");
 });

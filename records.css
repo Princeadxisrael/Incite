@@ -48,6 +48,12 @@ input {
   height: max-content;
   border-bottom: white;
 }
+h3 {
+  position: relative;
+  left: 42%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #0a8088;
+}
 /* first give grid parameters to parent grid-container*/
 .grid-container {
   display: grid;
@@ -72,7 +78,7 @@ input {
   border-radius: 10%;
   cursor: pointer;
   padding: 10px;
-  background-color: #594bda5d;
+  background-color: #5a5d;
 }
 
 /* give child elemennt grid names */
@@ -97,17 +103,17 @@ input {
   width: 240px;
   position: fixed;
   overflow-y: auto;
-  z-index: 2;
+  z-index: 2; /* needs to sit above the menu icon*/
   align-items: center;
   transform: translate(-245px);
   transition: all 0.6s ease-in-out;
 }
 
 /* the active class will be toggled on menu and close icon clicks */
-.sidebar_active {
+.sidebar.active {
   transform: translateX(0);
 }
-
+/* Only visbile on mobile screens */
 .sidebar_close-icon {
   position: absolute;
   visibility: visible;
@@ -179,10 +185,6 @@ input {
 .card-overview {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-/* 
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-} */
 
 #logo {
   border-radius: 20%;
@@ -205,12 +207,8 @@ input {
     margin-left: 0;
   }
   .sidebar {
-    /* background-color: #1b3141; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     position: relative;
-    /* overflow-y: auto; */
+
     transform: translateX(0);
   }
   .menu-icon {
@@ -219,7 +217,7 @@ input {
     justify-content: space-between;
   }
   .sidebar_close-icon {
-    visibility: visible;
+    visibility: hidden;
   }
 }
 
@@ -227,5 +225,8 @@ input {
 @media only screen and (min-width: 65.625em) {
   .overview {
     column-count: 12;
+  }
+  .sidebar_close-icon {
+    visibility: hidden;
   }
 }
