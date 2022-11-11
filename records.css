@@ -77,7 +77,7 @@ h3 {
   z-index: 1;
   border-radius: 50%;
   cursor: pointer;
-  padding: 5px;
+  padding: 0px;
   background-color: rgba(154, 230, 154, 0.867);
 }
 
