@@ -71,14 +71,15 @@ h3 {
   position: fixed;
   display: flex;
   top: 3px;
-  left: 10px;
+  left: 7px;
+  bottom: 5px;
   align-items: center;
   justify-content: center;
   z-index: 1;
   border-radius: 30%;
   cursor: pointer;
   padding: 10px;
-  background-color: #5a5d;
+  background-color: rgba(154, 230, 154, 0.867);
 }
 
 /* give child elemennt grid names */
