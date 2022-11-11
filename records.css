@@ -215,6 +215,7 @@ h3 {
     position: relative;
     align-items: center;
     justify-content: space-between;
+    visibility: hidden;
   }
   .sidebar_close-icon {
     visibility: hidden;
@@ -227,6 +228,9 @@ h3 {
     column-count: 12;
   }
   .sidebar_close-icon {
+    visibility: hidden;
+  }
+  .menu-icon {
     visibility: hidden;
   }
 }
