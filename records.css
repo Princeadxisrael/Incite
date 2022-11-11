@@ -42,7 +42,12 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
+input {
+  border-radius: 5px;
+  width: 300px;
+  height: max-content;
+  border-bottom: white;
+}
 /* first give grid parameters to parent grid-container*/
 .grid-container {
   display: grid;
@@ -79,7 +84,7 @@ li a {
   justify-content: space-between;
   padding: 0, 16px;
 }
-.header-search {
+.header_search {
   margin-left: 42px;
 }
 
@@ -117,6 +122,7 @@ li a {
   padding: 0;
   margin-top: 8px;
   list-style-type: none;
+  font-family: "Roboto Flex", sans-serif;
 }
 
 .sidebar_list-item {
@@ -142,6 +148,8 @@ li a {
   height: 60px;
   background-color: #666a75;
   color: white;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
 }
 .main_header-heading {
   font-size: 35px;
@@ -166,10 +174,15 @@ li a {
   justify-content: space-between;
   padding: 20px;
   background-color: rgba(51, 221, 94, 0.2);
+  box-shadow: 0px 1px;
 }
 .card-overview {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+/* 
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+} */
 
 #logo {
   border-radius: 20%;
@@ -206,7 +219,7 @@ li a {
     justify-content: space-between;
   }
   .sidebar_close-icon {
-    visibility: hidden;
+    visibility: visible;
   }
 }
 
