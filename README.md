@@ -1,6 +1,6 @@
 # Title
 
-Incite. A minimalist record management tool for ToolHub
+Incite. A minimalist record management tool for ToolHub Wikimedia
 
 ### for a quick preview:
 
