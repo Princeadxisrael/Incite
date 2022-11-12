@@ -4,15 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   
+
     <title>Dashboard</title>
-     <link rel="stylesheet" type="text/css" href="records.css" />
+    <link rel="stylesheet" type="text/css" href="records.css" />
     <!-- importing the Material icons library for easy font manipulation -->
-    <link  href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- fetching font from google api -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"
+    />
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
   </head>
   <body>
     <nav class="navigationbar">
@@ -31,30 +42,23 @@
       <!-- create a grid-container and div for each element in the container -->
       <div class="grid-container">
         <div class="menu-icon">
-          <span class="material-icons">
-            menu
-            </span>
+          <span class="material-icons"> menu </span>
         </div>
         <!-- create an header -->
 
         <header class="header">
-      
-       
           <div class="header_search-icon">
-            <span class="material-icons">
-              search
-              </span>
-              <input>
+            <span class="material-icons"> search </span>
+            <input />
           </div>
-          
+
           <div class="header_avatar-icon">
-         <span class="material-icons">
-            account_circle
-            </span></div>
+            <span class="material-icons profile"> account_circle </span>
+          </div>
         </header>
         <aside class="sidebar">
           <div class="sidebar_close-icon">
-            <span class="material-icons">close</span>
+            <span class="material-icons close">close</span>
           </div>
           <ul class="sidebar-list">
             <img id="logo" src="./Toolhub-logo.png" />
@@ -72,11 +76,13 @@
             <li class="sidebar_list-item">Developer Access</li>
           </ul>
         </aside>
-        <main class="main">
+        <section class="main">
           <div class="main-header">
-            <div class="main_header-heading"><light>Welcome</light> <strong>User</strong></div>
+            <div class="main_header-heading">
+              <light>Welcome</light> <strong>User</strong>
+            </div>
           </div>
-          <h3>Data Report Cards</h3>
+          <h3>Data Report/Analytics</h3>
           <div class="main-overview">
             <div class="overview">
               <div class="card-overview">Citation Added in the past month</div>
@@ -88,9 +94,9 @@
             </div>
             <div class="overview">
               <div class="card-overview">
-                Avg. citation Added in the past year
+                Avg. Approved Citation Added in the past year
               </div>
-              <div class="card-overview-info">85</div>
+              <div class="card-overview-info">885</div>
             </div>
             <div class="overview">
               <div class="card-overview">Avg. Monthly Community engagement</div>
@@ -105,11 +111,13 @@
               <div class="card-overview-info">450+</div>
             </div>
           </div>
-        </main>
+          <div class="ct-chart ct-major-eleventh" id="chart1"></div>
+        </section>
+
         <footer class="footer"></footer>
       </div>
     </main>
-  </div>
     <script src="records.js"></script>
+    <script src="recordchart.js"></script>
   </body>
 </html>

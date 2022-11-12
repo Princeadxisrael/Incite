@@ -27,6 +27,7 @@ A more stylish footer should add a liitle bit of vibrance to the page
 Dynamic dashboard with sidebar for the record dashboard page
 An admin area would also be a useful development for managing users activity
 Adding No-color icons to the dashboard would make the dashboard have a more gamified look
+Donuts visualization may contibute to a more gamified exprience
 
 ### System Minimum Requirements
 
@@ -39,6 +40,8 @@ Core intel
 ### Packages Used
 
 This project was bootstrapped with Vanilla JavaScript.
+
+Visualization was done with Chartist js library
 
 ### SetUp Instructions: Available Scripts
 

@@ -50,7 +50,7 @@ input {
 }
 h3 {
   position: relative;
-  left: 42%;
+  left: 39%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #0a8088;
 }
@@ -220,6 +220,9 @@ h3 {
   .sidebar_close-icon {
     visibility: hidden;
   }
+  .profile {
+    width: 50px;
+  }
 }
 
 /*medium-sized screen brekpoint(tablet, with 1050px breakpoint)*/
@@ -244,4 +247,9 @@ h3 {
   .card-overview {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
+}
+
+.ct-series-a .ct-bar {
+  stroke: green;
+  stroke-width: 20px;
 }
