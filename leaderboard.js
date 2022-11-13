@@ -2,7 +2,7 @@
 window.onload = function () {
   createTable();
 };
-
+// INSTATIATING THE CLASS Element
 function createTable() {
   //this function creates a table
   const elements = Elements.GetElements();
