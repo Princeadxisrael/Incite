@@ -1,7 +1,7 @@
 //specifying spatial parameters
 var options = {
-  width: 1000,
-  height: 200,
+  width: "100%",
+  height: "50%",
 };
 //enabling responsiveness
 var responsiveOptions = [
