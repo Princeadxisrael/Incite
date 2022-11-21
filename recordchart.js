@@ -1,8 +1,3 @@
-//specifying spatial parameters
-var options = {
-  width: "100%",
-  height: "50%",
-};
 //enabling responsiveness
 var responsiveOptions = [
   [
@@ -10,6 +5,8 @@ var responsiveOptions = [
     {
       seriesBarDistance: 10,
       axisX: {
+        //displaying labels
+        //enabling a function that allows us to modify values
         labelInterpolationFnc: function (value) {
           return value;
         },
@@ -39,6 +36,6 @@ new Chartist.Bar(
     ],
     series: [[35, 1021, 885]],
   },
-  options,
+
   responsiveOptions
 );
